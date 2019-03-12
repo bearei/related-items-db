@@ -11,7 +11,7 @@
     "start": "node server/index.js",
     "build": "webpack --mode production",
     "react-dev": "webpack -d --watch",
-    "csv": "node --max-old-space-size=8192 db/writingCSV.js",
+    "csv": "node db/writingCSV.js",
     "maria": "mysql -u root < db/connect.sql",
     "fire": "artillery run hello.yml"
   },
