@@ -1,0 +1,45 @@
+{
+  "name": "fec4-related-items-and-size-chart",
+  "version": "1.0.0",
+  "description": "sdc related items and size chart module",
+  "author": "Michael Lou",
+  "license": "none",
+  "engines": {
+    "node": ">=6.13.0"
+  },
+  "scripts": {
+    "start": "node server/index.js",
+    "build": "webpack --mode production",
+    "react-dev": "webpack -d --watch",
+    "csv": "node --max-old-space-size=8192 db/writingCSV.js",
+    "maria": "mysql -u root < db/connect.sql",
+    "fire": "artillery run hello.yml"
+  },
+  "dependencies": {
+    "axios": "^0.18.0",
+    "body-parser": "^1.18.3",
+    "css-loader": "^2.1.1",
+    "csv-writer": "^1.2.0",
+    "express": "^4.16.4",
+    "faker": "^4.1.0",
+    "knex": "^0.16.3",
+    "mysql": "^2.16.0",
+    "path": "^0.12.7",
+    "style-loader": "^0.23.1"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.2.2",
+    "@babel/preset-env": "^7.3.1",
+    "@babel/preset-react": "^7.0.0",
+    "babel-loader": "^8.0.5",
+    "eslint": "^5.14.0",
+    "eslint-config-airbnb-base": "^13.1.0",
+    "eslint-plugin-import": "^2.16.0",
+    "nodemon": "^1.18.10",
+    "react": "^16.8.1",
+    "react-dom": "^16.8.1",
+    "webpack": "^4.29.3",
+    "webpack-cli": "^3.2.3",
+    "webpack-dev-server": "^3.1.14"
+  }
+}
