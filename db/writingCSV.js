@@ -12,7 +12,7 @@ const createFakeProduct = () => ({
 for (var i = 0; i < 10; i++) {
   var fakeProducts = [];
 
-  for (var j = 0; j < 1000000; j++) {
+  for (var j = 0; j < 10000; j++) {
     fakeProducts.push(createFakeProduct());
   }
 
@@ -80,9 +80,9 @@ var image;
 for (var v = 0; v < 4; v ++) {
   for (var m = 0; m < 10 ; m++) {
     var fakePAVs = [];
-    for (var n = 0; n < 1000000; n++) {
+    for (var n = 0; n < 10000; n++) {
       image = Math.floor(Math.random() * 400 + 1);
-      fakePAVs.push(createFakePAV((m * 1000000) + n + 1, image));
+      fakePAVs.push(createFakePAV((m * 10000) + n + 1, image));
     }
   
     var pathway = path.join(__dirname, `./fakePAVs${v}.csv`);
