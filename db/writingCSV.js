@@ -83,12 +83,12 @@ const makeData = async function() {
   const pavs = async function() {
     var image;
 
-    for (var m = 0; m < 100 ; m++) {
+    for (var m = 0; m < 1000 ; m++) {
       var fakePAVs = [];
-      for (var n = 0; n < 100000; n++) {
+      for (var n = 0; n < 10000; n++) {
         for (var v = 0; v < 4; v ++) {
           image = Math.floor(Math.random() * 400 + 1);
-          fakePAVs.push(createFakePAV((m * 100000) + n + 1, image));
+          fakePAVs.push(createFakePAV((m * 10000) + n + 1, image));
         }
       }
     
