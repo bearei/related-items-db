@@ -7,8 +7,7 @@ const app = express();
 // const redis = require('redis');
 // const client = redis.createClient();
 
-const PORT = process.env.PORT || 8081;
-
+const PORT = process.env.PORT || 3008;
 
 app.use('/:itemId', express.static(path.join(__dirname, '../public')));
 app.use(bodyParser.json());
