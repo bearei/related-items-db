@@ -15,7 +15,7 @@ const createProducts = function(fileName) {
 }
 const createPAVs = function(fileName) {
   return createCsvWriter({
-    path: __dirname + `/test/reviews/${fileName}.csv`,
+    path: __dirname + `/test/pavs/${fileName}.csv`,
     header: [
       {id: 'link_to_image', title: 'link_to_image'},
       {id: 'star_rating', title: 'star_rating'},
