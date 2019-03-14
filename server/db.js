@@ -11,6 +11,7 @@ const fetchChartFromDB = () => {
 };
 
 const postPAV = (details) => {
+    console.log('inside db.js');
     return knex('pavs')
         .insert({
             link_to_image: details.link_to_image,

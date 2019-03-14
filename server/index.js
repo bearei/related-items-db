@@ -33,6 +33,7 @@ app.put('/update/:itemId', (req, res) => {
 });
 
 app.post('/api/post', (req, res) => {
+  console.log('inside index.js');
   db.postPAV(req.body)
     .then(() => {
       res.end('posted');
