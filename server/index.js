@@ -32,7 +32,7 @@ app.put('/update/:itemId', (req, res) => {
     });
 });
 
-app.post('/post', (req, res) => {
+app.post('/api/post', (req, res) => {
   db.postPAV(req.body)
     .then(() => {
       res.end('posted');
